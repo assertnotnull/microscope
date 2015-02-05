@@ -11,4 +11,10 @@ if (Posts.find().count() === 0) {
     title: 'The Meteor Book',
     url: 'http://themeteorbook.com'
   });
+  for (var i=7;i<=50;i++) {
+    Posts.insert({
+      title: 'The Meteor Book'+i,
+      url: 'http://themeteorbook.com'
+    });
+  }
 }
